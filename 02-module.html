@@ -48,7 +48,9 @@
       }
       $scope.message='请输入用户名';
       $scope.$watch('user.name',function(now,old){
-          if(now){
+        console.log('now is ' + now);
+        console.log('old is ' + old);
+         /* if(now){
             if (now.length < 7) {
                $scope.message='输入法格式不正确';
             }else{
@@ -56,7 +58,7 @@
             }
           }else{
             $scope.message='请输入用户名';
-          }
+          }*/
       });
     }]);
 </script>
